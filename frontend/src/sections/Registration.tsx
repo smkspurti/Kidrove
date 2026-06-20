@@ -26,8 +26,8 @@ export const Registration = () => {
     setIsSubmitting(true);
     setErrorMessage("");
     try {
-      // Use environment variable for API URL if deployed, otherwise fallback to local backend
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/enquiry';
+      // Use relative path since frontend and backend are now hosted together
+      const API_URL = import.meta.env.VITE_API_URL || '/api/enquiry';
       const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
