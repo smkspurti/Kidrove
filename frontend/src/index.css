@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #1e1b4b; /* Deeper indigo */
+  --color-brand-primary: #8b5cf6; /* Playful purple */
+  --color-brand-secondary: #f97316; /* Bright orange */
+  --color-brand-light: #fffdfa; /* Warm cream/off-white */
+  --font-sans: "Nunito", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-light text-brand-dark antialiased relative;
+  }
+  
+  /* Playful dotted graph paper background pattern */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+    background-size: 32px 32px;
+    opacity: 0.3;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white rounded-[2rem] border-4 border-white shadow-[0_8px_30px_rgb(0,0,0,0.06)];
+  }
+  .glass-dark {
+    @apply bg-[#2e2970] rounded-[2rem] border-4 border-white/10 shadow-2xl;
+  }
+}
