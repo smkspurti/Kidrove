@@ -3,7 +3,7 @@
 This repository contains the frontend and backend code for the Kidrove AI & Robotics Summer Workshop Landing Page.
 
 **GitHub Repository Link:** [https://github.com/smkspurti/Kidrove](https://github.com/smkspurti/Kidrove)  
-**Live Demo Link:** Not currently deployed (runs locally)
+**Live Demo Link:** [https://kidrove-1-s6o1.onrender.com/](https://kidrove-1-s6o1.onrender.com/)
 
 ## Submission Note
 
