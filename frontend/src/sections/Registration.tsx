@@ -26,8 +26,9 @@ export const Registration = () => {
     setIsSubmitting(true);
     setErrorMessage("");
     try {
-      // In a real app, URL would come from env
-      const response = await fetch('http://localhost:5000/api/enquiry', {
+      // Use environment variable for API URL if deployed, otherwise fallback to local backend
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/enquiry';
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
