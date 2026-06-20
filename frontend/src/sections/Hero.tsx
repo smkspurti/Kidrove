@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Users, ArrowRight, Bot, Cpu, Rocket, Laptop, CreditCard } from 'lucide-react';
+import { Calendar, Clock, Users, ArrowRight, Cpu, Rocket, Laptop, CreditCard } from 'lucide-react';
 
 export const Hero = () => {
   return (
